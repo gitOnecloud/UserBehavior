@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<!-- <constant name="struts.devMode" value="true"></constant> -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+	<constant name="struts.multipart.maxSize" value="314572800" />
+	
+	<package name="SSH_default" extends="struts-default">
+		<default-action-ref name="index_rd"/>
+		<global-results>
+			<result name="success">/WEB-INF/content/{1}/{1}_{2}.jsp</result>
+			<result name="anyaction" type="redirectAction">${json}</result>
+			<result name="anyjsp">/WEB-INF/content/${json}</result>
+			<result name="json">/json.jsp</result>
+			<result name="jhtml">/jhtml.jsp</result>
+		
+			<result name="mess">/message.jsp?json=${json}</result>
+			<result name="index">/WEB-INF/content/index.jsp</result>
+		</global-results>
+		<action name="index_rd" class="util" method="index"></action>
+		<action name="*_*" class="{1}" method="{2}"><!-- 交给spring容器管理 -->
+			<result name="excel" type="stream">
+                <param name="contentType">application/vnd.ms-excel</param>
+                <param name="inputName">excelStream</param>
+ 				<param name="contentDisposition">attachment;filename="${downloadFileName}.xls"</param>
+                <param name="bufferSize">4096</param>
+            </result>
+		</action>
+	</package>
+	
+</struts>

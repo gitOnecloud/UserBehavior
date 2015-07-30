@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+    	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+<!-- Hessian服务端 -->
+	<!-- 远程服务，后缀加上_no表示跳过spring security -->
+	<bean name="/serverHessianService_no" class="cn.onecloud.util.hessian.HessianServiceExporter">
+		<property name="service" ref="serverManager" />
+		<property name="serviceInterface">
+			<value>cn.onecloud.service.cmdb.server.ServerManager</value>
+		</property>
+		<!-- RSA密钥管理类 -->
+		<property name="hessianClientManager" ref="hessianClientManager" />
+	</bean>
+<!-- Hessian服务端 -->
+	<!-- 远程服务，后缀加上_no表示跳过spring security -->
+	<bean name="/cabinetHessianService_no" class="cn.onecloud.util.hessian.HessianServiceExporter">
+		<property name="service" ref="cabinetManager" />
+		<property name="serviceInterface">
+			<value>cn.onecloud.service.cmdb.server.CabinetManager</value>
+		</property>
+		<!-- RSA密钥管理类 -->
+		<property name="hessianClientManager" ref="hessianClientManager" />
+	</bean>
+<!-- Hessian服务端 -->
+	<!-- 远程服务，后缀加上_no表示跳过spring security -->
+	<bean name="/roomHessianService_no" class="cn.onecloud.util.hessian.HessianServiceExporter">
+		<property name="service" ref="roomManager" />
+		<property name="serviceInterface">
+			<value>cn.onecloud.service.cmdb.server.RoomManager</value>
+		</property>
+		<!-- RSA密钥管理类 -->
+		<property name="hessianClientManager" ref="hessianClientManager" />
+	</bean>
+<!-- Hessian服务端 -->
+	<!-- 远程服务，后缀加上_no表示跳过spring security -->
+	<bean name="/styleHessianService_no" class="cn.onecloud.util.hessian.HessianServiceExporter">
+		<property name="service" ref="styleManager" />
+		<property name="serviceInterface">
+			<value>cn.onecloud.service.cmdb.server.StyleManager</value>
+		</property>
+		<!-- RSA密钥管理类 -->
+		<property name="hessianClientManager" ref="hessianClientManager" />
+	</bean>
+<!-- Hessian服务端 -->
+	<!-- 远程服务，后缀加上_no表示跳过spring security -->
+	<bean name="/ingredientHessianService_no" class="cn.onecloud.util.hessian.HessianServiceExporter">
+		<property name="service" ref="ingredientManager" />
+		<property name="serviceInterface">
+			<value>cn.onecloud.service.cmdb.IngredientManager</value>
+		</property>
+		<!-- RSA密钥管理类 -->
+		<property name="hessianClientManager" ref="hessianClientManager" />
+	</bean>
+<!-- Hessian服务端 -->
+	<!-- 远程服务，后缀加上_no表示跳过spring security -->
+	<bean name="/ingredientDefineHessianService_no" class="cn.onecloud.util.hessian.HessianServiceExporter">
+		<property name="service" ref="ingredientDefineManager" />
+		<property name="serviceInterface">
+			<value>cn.onecloud.service.cmdb.IngredientDefineManager</value>
+		</property>
+		<!-- RSA密钥管理类 -->
+		<property name="hessianClientManager" ref="hessianClientManager" />
+	</bean>
+<!-- Hessian服务端 -->
+	<!-- 远程服务，后缀加上_no表示跳过spring security -->
+	<bean name="/arenaHessianService_no" class="cn.onecloud.util.hessian.HessianServiceExporter">
+		<property name="service" ref="arenaManager" />
+		<property name="serviceInterface">
+			<value>cn.onecloud.service.cmdb.ArenaManager</value>
+		</property>
+		<!-- RSA密钥管理类 -->
+		<property name="hessianClientManager" ref="hessianClientManager" />
+	</bean>
+</beans>

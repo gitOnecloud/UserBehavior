@@ -1,0 +1,4 @@
+#Mon Nov 04 15:16:11 CST 2013
+eclipse.preferences.version=1
+validator.Checked=src/struts.xml,WebRoot/script/jquery.min.js,WebRoot/script/kindeditor/plugins/code/prettify.js
+validator.Unchecked=

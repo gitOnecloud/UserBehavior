@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	font-family: helvetica,tahoma,verdana,sans-serif;
+}
+input {
+	outline: none;
+}
+a {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration:underline;
+} 
+.hidden {
+	display: none;
+}
+div.easyui-tabs div.tabs-panels div.panel {
+	padding: 0 5px;
+}
+.index_prompt {
+	font-size: 12px;
+	background-color: #F9EDBE;/* 蓝#D6E9F8 */
+    border-color: #F0C36D; /* 蓝#4D90F0 */
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: inline-block;
+    font-weight: bold;
+    height: 14px;
+    left: 56%;
+    overflow: hidden;
+    padding: 6px 16px;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.218s ease 0s;
+    z-index: 10000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* 菜单 */
+#index_treeDemo {padding: 0 0 20px 0;}
+#index_treeDemo li ul{margin:0; padding:0}
+#index_treeDemo li {line-height:30px;}
+#index_treeDemo li a {
+	color: #003399;
+	width: 100%;
+	height: 30px;
+	padding: 0 0 0 3px;
+}
+#index_treeDemo li a:hover {text-decoration:none; background-color:#EEEEFF;}
+#index_treeDemo li a span.button.switch {visibility: hidden;margin-right: 4px;}
+#index_treeDemo.showIcon li a span.button.switch {visibility: visible;}
+#index_treeDemo li a.curSelectedNode {
+	background-color: #EEEEFF;
+	border-color: #DD4B39;
+	border-style: none none none solid;
+	border-width: 0 0 0 3px;
+	height: 30px;
+	opacity: 1;
+	padding-left: 0;
+}
+#index_treeDemo li span {line-height:30px;}
+#index_treeDemo li span.button {margin-top: -7px;}
+#index_treeDemo li span.button.switch {width: 16px;height: 16px;}
+
+#index_treeDemo li a.level0 span {font-size: 14px;font-weight: bold;}
+#index_treeDemo li span.button.noline_docu {background: none repeat scroll 0 0 transparent;}
+#index_treeDemo li span.button {
+	background-image:url("../script/ztree/css/img/left_menu.png");
+	*background-image:url("../script/ztree/css/img/left_menuForOutLook.gif")
+}
+#index_treeDemo li span.button.switch.level0 {width: 20px; height:20px}
+#index_treeDemo li span.button.switch.level1 {width: 16px; height:16px}
+#index_treeDemo li span.button.noline_open {background-position: -2px 1px;}
+#index_treeDemo li span.button.noline_close {background-position: -21px 1px;}
+#index_treeDemo li span.button.noline_open.level0 {background-position: 0 -16px;}
+#index_treeDemo li span.button.noline_close.level0 {background-position: -18px -16px;}
+
+.demo-info{
+	background:#FFFEE6;
+	color:#8F5700;
+	padding:12px;
+	white-space: nowrap;
+}
+.demo-tip{
+	width:24px;
+	height:16px;
+	float:left;
+}
+
+/* 菜单 输入框 */
+.usli_item {
+	display: inline-block;
+	vertical-align: middle;
+}
+span.usli_item {
+	padding: 2px 0 2px 5px;
+}
+.usli_ftitle {
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+	padding:5px 0;
+	margin-bottom:10px;
+	border-bottom:1px solid #ccc;
+}
+.fitem {
+	padding-bottom: 5px;
+}
+.usli_fitem {
+	padding-bottom: 5px;
+}
+.usli_fitem label {
+	padding-right: 6px;
+}
+.usli_fitem input {
+	height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    width:150px
+}
+.memuli_input input {
+	height: 20px;
+	line-height: 20px;
+	width: 180px;
+}
+
+/* ingredientdefine_list.jsp */
+.igdli_input200, .igdli_input160, .igdli_input60,
+.igdli_input100, .igdli_input120, .igdli_input260,
+.igdli_input360 {
+	height: 18px;
+	line-height: 18px;
+	vertical-align: middle;
+}
+.igdli_input60 {
+	width: 60px;
+}
+.igdli_input100 {
+	width: 100px;
+}
+.igdli_input120 {
+	width: 120px;
+}
+.igdli_input160 {
+	width: 160px;
+}
+.igdli_input200 {
+	width: 200px;
+}
+.igdli_input260 {
+	width: 260px;
+}
+.igdli_input360 {
+	width: 360px;
+}
+/* 角色权限 menu_role.jsp */
+.menuRole_body {
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+}
+.menuRole_choose {
+	left: 50px;
+	position: absolute;
+	top: 10px;
+	width: 260px;
+}
+.menuRole_change {
+	left: 400px;
+	position: absolute;
+	top: 5px;
+	width: 260px;
+}
+.menuRole_aTree {
+	border: 1px solid #C0C0C0;
+	bottom: 15px;
+	left: 50px;
+	overflow: auto;
+	position: absolute;
+	top: 36px;
+	width: 260px;
+}
+.menuRole_rTree {
+	left: 400px;
+}
+.menuRole_center {
+	left: 330px;
+	position: absolute;
+	top: 40%;
+	width: 60px;
+}
+/* arena_list_jsp */
+.arenali_adddiv {
+	padding: 5px 0 3px 96px;
+    position: relative;
+}
+.arenali_addlabel {
+	position: absolute;
+	right: 269px;
+	top: 8px;
+}
+/* server_list_jsp */
+.svli_adddiv {
+	padding: 5px 0 3px 110px;
+    position: relative;
+}
+.svli_addlabel {
+	position: absolute;
+	right: 400px;
+	top: 7px;
+}
+/* 排序样式 */
+.sortable_div {
+	position: relative;
+}
+.sortable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	z-index: 2;
+}
+.sortable li {
+	background: none repeat scroll 0 0 #F6F6F6;
+	border: 1px solid #CCCCCC;
+	color: #1C94C4;
+	/*cursor: move;*/
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	list-style: none outside none;
+	text-align: center;
+}
+li.highlight {
+	background: #FEE25F;
+}
+li.sortable-placeholder {
+	border: 1px dashed #CCC;
+	background: none;
+}
+.sortable_bg {
+	border: 1px solid #000;
+	position: absolute;
+	z-index: 1;
+}
+.right_bottom_border {
+	border-right: 1px dotted #333;
+	border-bottom: 1px dotted #333;
+	position: absolute;
+}
+.bottom_border {
+	border-bottom: 1px dotted #333;
+	position: absolute;
+}
+.right_border {
+	border-right: 1px dotted #333;
+	position: absolute;
+}
+/* 排序样式 - end */

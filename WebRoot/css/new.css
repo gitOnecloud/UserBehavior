@@ -1,0 +1,66 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,address,code,
+del,em,img,dl,dt,dd,ol,ul,li,fieldset,form,label{margin:0;padding:0;border:0;font-style:inherit;font-family:inherit;vertical-align:baseline;}
+
+.new_header{ background: url(../images/new_header.png) left top no-repeat #456084; height:67px;}
+.new_header2{ background: url(../images/head_bg.png) left top repeat-x; height:72px;}
+.head_line{ height:5px; width:100%; background-color:#ff777a;}
+.new_left{ background: url(../images/index_footer_bg.gif);}
+#index_user{ color:#FFF;}
+
+.ms{padding-left:8px;color:#999; font-size:12px; font-weight:100;}
+.link{padding:0 5px; color:#5088c7; font-size:12px; text-decoration:underline;}
+.error{ padding:0 5px; font-size: 12px;color:#f00!important; font-weight:100;}
+.d_user,.d_pw,.d_mail,.d_code,.d_rig{ background:url(../images/icons.png) no-repeat ; display:inline-block; padding-left:25px; height:24px; vertical-align:middle; line-height:24px; font-size:14px; margin-right:15px; width:58px;}
+.d_user{background-position:-10px -1110px;} /* ======用户名====== */
+.d_pw{background-position:-10px -1140px; } /* ======密码====== */
+.d_code{background-position:-10px -1170px;} /* ======验证码====== */
+.d_rig{background-position:-10px -1200px;} /* ======正确====== */
+.d_mail{background-position:-10px -1257px;} /* ======邮箱====== */
+.login_top{background:#d6e7f7; height:69px; padding-top:10px; min-width:1200px;}
+.login_center{margin:0 auto; width:1200px; height:70px;}
+.login_content{ min-height:500px; background:url(../images/login_bg.jpg) no-repeat #edeee8; margin:0 auto; width:480px;  padding:200px 0 0 720px;}
+.login_bg{ background-color:#edeee8; height:auto;}
+.login{width:480px; height:220px; position:relative;}
+.login h1{font-size:24px; font-weight:bold; font-family:"微软雅黑"; padding-bottom:32px;}
+.login input.login_yzm{ width:110px; margin-right:75px;}
+.login p{ margin-bottom:15px; position:relative;}
+
+.login p .d_yzm{ position:absolute; left:223px; top:1px;}
+.login_btn{ border:0; text-decoration:none; background:#ff777a; width:150px; height:36px; cursor:pointer; margin-top:10px; font-size:16px; font-weight:bold; text-align:center; line-height:36px; color:#FFF;}
+.login_btn:hover{ background:#ed6568;}
+.login_btn2{ border:0; text-decoration:none; background:#bfc4bd; width:110px; height:36px; cursor:pointer; margin-top:10px; font-size:16px; font-weight:bold; text-align:center; line-height:36px; color:#FFF;}
+.login_btn2:hover{ background:#9fa79b;}
+.login_footer{background:#34b49d; height:50px; font-size:12px; font-family:Arial,"宋体"; text-align:center; color:#FFF; line-height:50px; min-width:1200px;}
+.footer {padding: 20px;background: url(footer_tel.png) no-repeat right 10px #fff;border-top: 1px #CCCCCC solid;margin: 0; display:block;}
+
+.loginPrompt {
+color: #92A4BF;
+cursor: text;
+left: 9px;
+line-height: 20px;
+position: absolute;
+top: 7px;
+}
+.inputtext {
+border: 0 none;
+color: #333333;
+font-size: 16px;
+font-weight: bold;
+height: 26px;
+line-height: 21px;
+padding: 6px 7px 4px;
+vertical-align: middle;
+width: 255px;
+}
+.inputLine {
+background-color: #FFFFFF;
+border: 1px solid #BBBBBB;
+border-color: #BAC5D4 #D5DBE2 #D5DBE2 #BAC5D4;
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) inset;
+height:36px;
+}
+.formIpt {
+position: relative;
+width: 270px;
+}
